@@ -1,13 +1,55 @@
+/* 全体のレイアウト調整 */
 body {
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ゲーム全体を中央に表示 */
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 入力欄やボタンの見た目調整 */
+input, button {
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* ラジオボタンのラベル */
+label {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+/* スマホ画面用にレイアウト調整 */
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 10px;
+    padding: 20px;
   }
-  
+
   input, button {
-    font-size: 1.2em;
-    padding: 10px;
-    margin-top: 10px;
+    width: 100%;
+    font-size: 1.1em;
   }
-  
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+}
