@@ -1,1 +1,26 @@
-<h1>hello Game</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>数字当てゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>数字を当ててみよう！</h1>
+
+    <p>難易度を選んでください：</p>
+<label><input type="radio" name="level" value="1" checked> 簡単</label>
+<label><input type="radio" name="level" value="2"> 普通</label>
+<label><input type="radio" name="level" value="3"> 難しい</label>
+
+    <p id="message">1～○○の数字を当ててね</p>
+
+    <input type="number" id="guessInput" placeholder="数字を入力">
+    <button id="guessButton">判定</button>
+
+    <p id ="result"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
